@@ -1,0 +1,46 @@
+<html <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>The Danger of ems For Font Size</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <h1>The Danger Using em To Set Font Sizes</h1>
+                <p>The use of the em unit in setting font size can cause some crazy cascading effects</p>
+            <ul>
+                <li>This is a list item within the first <span><code>ul</code></span></li>
+                <li>Its font size is set to 1.125em (about 18px)</li>
+                <li>I am 1em too</li>
+                <ul>
+                    <li>This is a list item in a second, nested <span><code>ul</code></span></li>
+                    <li>This is where the cascading em effect begins to be noticeable</li>
+                    <li>I am now at 1.125em * 1.125em = 1.265 (about 20.25px)</li>
+                    <ul>
+                        <li>This is a list item in the third, nested <span><code>ul</code></span></li>
+                        <li>The multiplicative effect continues</li>
+                        <li>I am now at 1.125em * 1.125em * 1.125 = 1.4238 (about 22.78px)</li>
+                    </ul>
+                </ul>
+            </ul>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu turpis sapien. Sed luctus porttitor efficitur. Praesent condimentum felis quis ipsum blandit sollicitudin ac nec turpis. Morbi suscipit, eros ac maximus lacinia, eros ipsum fringilla ipsum, quis sagittis augue lacus ut mi. Fusce lobortis dui molestie tincidunt aliquam. Morbi efficitur tristique enim, quis imperdiet urna eleifend non. Etiam lacinia vehicula pulvinar. Proin nec lorem odio. Nam efficitur leo id metus ullamcorper ullamcorper a eu metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget eros ligula. Donec eleifend id urna non aliquam. Ut congue accumsan velit, vel pellentesque nunc accumsan sed. Integer venenatis facilisis neque, vel suscipit sapien dapibus at. Nunc ac lectus in magna convallis fermentum et in lectus. Donec tristique purus quis dui vehicula posuere.</p>
+            <div class="call-to-action">
+                <h2>Buy This Product Now</h2>
+                <p>Order now and save 0.025%</p>
+                <a href="#" target="_blank"><button>BUY NOW</button></a>
+            </div>
+        </div>
+        </main>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
